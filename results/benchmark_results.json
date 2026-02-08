@@ -1,0 +1,912 @@
+{
+  "config": {
+    "base_url": "http://localhost:8000",
+    "runs_per_query": 3,
+    "clicks": 50,
+    "concurrent": 50
+  },
+  "search_benchmarks": [
+    {
+      "label": "Christmas (holiday)",
+      "query": "Christmas",
+      "total_candidates": 96,
+      "results_returned": 13,
+      "latency": {
+        "runs": 3,
+        "min_ms": 93.9,
+        "max_ms": 101.0,
+        "avg_ms": 97.8,
+        "median_ms": 98.7
+      },
+      "stages": {
+        "retrieval_ms": 40.1,
+        "ranking_ms": 0.6,
+        "rerank_ms": 41.7,
+        "diversity_ms": 6.5
+      },
+      "top_5": [
+        {
+          "position": 1,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.392,
+          "popularity": 1.0,
+          "composite": 0.6931,
+          "final": 0.6032,
+          "mmr": 0.4222,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Bhrashtachar: The Price of Blood",
+          "genre": "metal",
+          "mood": "aggressive",
+          "bpm": 120,
+          "semantic": 0.1376,
+          "popularity": 0.5,
+          "composite": 0.4252,
+          "final": 0.4701,
+          "mmr": 0.219,
+          "redundancy": 0.3668
+        },
+        {
+          "position": 3,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.15,
+          "popularity": 1.0,
+          "composite": 0.5745,
+          "final": 0.5298,
+          "mmr": 0.1965,
+          "redundancy": 0.5812
+        },
+        {
+          "position": 4,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.1626,
+          "popularity": 1.0,
+          "composite": 0.5791,
+          "final": 0.5316,
+          "mmr": 0.1901,
+          "redundancy": 0.607
+        },
+        {
+          "position": 5,
+          "title": "Infinity's Shadow",
+          "genre": "soundtrack",
+          "mood": "dark",
+          "bpm": 120,
+          "semantic": 0.1159,
+          "popularity": 0.5,
+          "composite": 0.4237,
+          "final": 0.4695,
+          "mmr": 0.1631,
+          "redundancy": 0.5518
+        }
+      ]
+    },
+    {
+      "label": "Upbeat pop (genre)",
+      "query": "upbeat pop",
+      "total_candidates": 96,
+      "results_returned": 16,
+      "latency": {
+        "runs": 3,
+        "min_ms": 108.8,
+        "max_ms": 119.5,
+        "avg_ms": 112.4,
+        "median_ms": 109.1
+      },
+      "stages": {
+        "retrieval_ms": 53.4,
+        "ranking_ms": 0.5,
+        "rerank_ms": 46.7,
+        "diversity_ms": 14.1
+      },
+      "top_5": [
+        {
+          "position": 1,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.5156,
+          "popularity": 1.0,
+          "composite": 0.7539,
+          "final": 0.6315,
+          "mmr": 0.4421,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.2948,
+          "popularity": 1.0,
+          "composite": 0.6465,
+          "final": 0.5586,
+          "mmr": 0.2514,
+          "redundancy": 0.4654
+        },
+        {
+          "position": 3,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.2746,
+          "popularity": 1.0,
+          "composite": 0.633,
+          "final": 0.5532,
+          "mmr": 0.2052,
+          "redundancy": 0.607
+        },
+        {
+          "position": 4,
+          "title": "Kathmandu Rhythms",
+          "genre": "folk / acoustic",
+          "mood": "energetic",
+          "bpm": 120,
+          "semantic": 0.3986,
+          "popularity": 0.5,
+          "composite": 0.5738,
+          "final": 0.5299,
+          "mmr": 0.1852,
+          "redundancy": 0.6191
+        },
+        {
+          "position": 5,
+          "title": "Weekend Vibes",
+          "genre": "pop",
+          "mood": "happy",
+          "bpm": 120,
+          "semantic": 0.552,
+          "popularity": 0.5,
+          "composite": 0.5819,
+          "final": 0.5628,
+          "mmr": 0.1771,
+          "redundancy": 0.7227
+        }
+      ]
+    },
+    {
+      "label": "Chill ambient (mood)",
+      "query": "chill ambient relaxing",
+      "total_candidates": 96,
+      "results_returned": 14,
+      "latency": {
+        "runs": 3,
+        "min_ms": 92.5,
+        "max_ms": 114.2,
+        "avg_ms": 99.9,
+        "median_ms": 93.0
+      },
+      "stages": {
+        "retrieval_ms": 38.2,
+        "ranking_ms": 0.6,
+        "rerank_ms": 41.1,
+        "diversity_ms": 9.5
+      },
+      "top_5": [
+        {
+          "position": 1,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.5375,
+          "popularity": 1.0,
+          "composite": 0.76,
+          "final": 0.604,
+          "mmr": 0.4228,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.2703,
+          "popularity": 1.0,
+          "composite": 0.6312,
+          "final": 0.5525,
+          "mmr": 0.2471,
+          "redundancy": 0.4654
+        },
+        {
+          "position": 3,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.4094,
+          "popularity": 1.0,
+          "composite": 0.7024,
+          "final": 0.581,
+          "mmr": 0.2246,
+          "redundancy": 0.607
+        },
+        {
+          "position": 4,
+          "title": "Midnight Study",
+          "genre": "electronic",
+          "mood": "chill",
+          "bpm": 80,
+          "semantic": 0.4571,
+          "popularity": 0.5,
+          "composite": 0.552,
+          "final": 0.5461,
+          "mmr": 0.1906,
+          "redundancy": 0.639
+        },
+        {
+          "position": 5,
+          "title": "Kathmandu Rhythms",
+          "genre": "folk / acoustic",
+          "mood": "energetic",
+          "bpm": 120,
+          "semantic": 0.3145,
+          "popularity": 0.5,
+          "composite": 0.5228,
+          "final": 0.5091,
+          "mmr": 0.1706,
+          "redundancy": 0.6191
+        }
+      ]
+    },
+    {
+      "label": "Energetic dance (tempo)",
+      "query": "energetic dance beat",
+      "total_candidates": 96,
+      "results_returned": 14,
+      "latency": {
+        "runs": 3,
+        "min_ms": 92.7,
+        "max_ms": 102.0,
+        "avg_ms": 96.9,
+        "median_ms": 95.8
+      },
+      "stages": {
+        "retrieval_ms": 42.6,
+        "ranking_ms": 0.6,
+        "rerank_ms": 40.9,
+        "diversity_ms": 7.8
+      },
+      "top_5": [
+        {
+          "position": 1,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.3739,
+          "popularity": 1.0,
+          "composite": 0.6814,
+          "final": 0.5857,
+          "mmr": 0.41,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.2459,
+          "popularity": 1.0,
+          "composite": 0.6199,
+          "final": 0.548,
+          "mmr": 0.244,
+          "redundancy": 0.4654
+        },
+        {
+          "position": 3,
+          "title": "Kathmandu Rhythms",
+          "genre": "folk / acoustic",
+          "mood": "energetic",
+          "bpm": 120,
+          "semantic": 0.4248,
+          "popularity": 0.5,
+          "composite": 0.5781,
+          "final": 0.5548,
+          "mmr": 0.2026,
+          "redundancy": 0.6191
+        },
+        {
+          "position": 4,
+          "title": "Midnight Pulse",
+          "genre": "electronic",
+          "mood": "energetic",
+          "bpm": 120,
+          "semantic": 0.5139,
+          "popularity": 0.5,
+          "composite": 0.6169,
+          "final": 0.5468,
+          "mmr": 0.2005,
+          "redundancy": 0.6074
+        },
+        {
+          "position": 5,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.2082,
+          "popularity": 1.0,
+          "composite": 0.5979,
+          "final": 0.5392,
+          "mmr": 0.1953,
+          "redundancy": 0.607
+        }
+      ]
+    },
+    {
+      "label": "Sad piano ballad (instrument)",
+      "query": "sad piano ballad",
+      "total_candidates": 96,
+      "results_returned": 15,
+      "latency": {
+        "runs": 3,
+        "min_ms": 90.4,
+        "max_ms": 97.2,
+        "avg_ms": 93.3,
+        "median_ms": 92.2
+      },
+      "stages": {
+        "retrieval_ms": 40.7,
+        "ranking_ms": 1.0,
+        "rerank_ms": 40.0,
+        "diversity_ms": 6.9
+      },
+      "top_5": [
+        {
+          "position": 1,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.4487,
+          "popularity": 1.0,
+          "composite": 0.721,
+          "final": 0.5884,
+          "mmr": 0.4119,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.3186,
+          "popularity": 1.0,
+          "composite": 0.6588,
+          "final": 0.5635,
+          "mmr": 0.2549,
+          "redundancy": 0.4654
+        },
+        {
+          "position": 3,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.3799,
+          "popularity": 1.0,
+          "composite": 0.6841,
+          "final": 0.5736,
+          "mmr": 0.2195,
+          "redundancy": 0.607
+        },
+        {
+          "position": 4,
+          "title": "Infinity's Shadow",
+          "genre": "soundtrack",
+          "mood": "dark",
+          "bpm": 120,
+          "semantic": 0.3436,
+          "popularity": 0.5,
+          "composite": 0.5184,
+          "final": 0.5073,
+          "mmr": 0.1896,
+          "redundancy": 0.5518
+        },
+        {
+          "position": 5,
+          "title": "Whisker Waltz",
+          "genre": "children / family",
+          "mood": "happy",
+          "bpm": 120,
+          "semantic": 0.4246,
+          "popularity": 0.5,
+          "composite": 0.5652,
+          "final": 0.5261,
+          "mmr": 0.1828,
+          "redundancy": 0.6184
+        }
+      ]
+    },
+    {
+      "label": "Hip hop rap (genre+mood)",
+      "query": "hip hop rap confident",
+      "total_candidates": 96,
+      "results_returned": 15,
+      "latency": {
+        "runs": 3,
+        "min_ms": 92.6,
+        "max_ms": 94.4,
+        "avg_ms": 93.3,
+        "median_ms": 92.8
+      },
+      "stages": {
+        "retrieval_ms": 41.3,
+        "ranking_ms": 0.7,
+        "rerank_ms": 39.9,
+        "diversity_ms": 8.6
+      },
+      "top_5": [
+        {
+          "position": 1,
+          "title": "Breaking Out",
+          "genre": "hip-hop / rap",
+          "mood": "confident",
+          "bpm": 90,
+          "semantic": 0.5905,
+          "popularity": 0.5,
+          "composite": 0.6198,
+          "final": 0.5779,
+          "mmr": 0.4045,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.1736,
+          "popularity": 1.0,
+          "composite": 0.5834,
+          "final": 0.5334,
+          "mmr": 0.2357,
+          "redundancy": 0.459
+        },
+        {
+          "position": 3,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.308,
+          "popularity": 1.0,
+          "composite": 0.6522,
+          "final": 0.5609,
+          "mmr": 0.2141,
+          "redundancy": 0.5949
+        },
+        {
+          "position": 4,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.1782,
+          "popularity": 1.0,
+          "composite": 0.58,
+          "final": 0.532,
+          "mmr": 0.1903,
+          "redundancy": 0.607
+        },
+        {
+          "position": 5,
+          "title": "Midnight Pulse",
+          "genre": "electronic",
+          "mood": "energetic",
+          "bpm": 120,
+          "semantic": 0.3627,
+          "popularity": 0.5,
+          "composite": 0.5198,
+          "final": 0.5079,
+          "mmr": 0.1733,
+          "redundancy": 0.6074
+        }
+      ]
+    },
+    {
+      "label": "Folk acoustic (genre+instr)",
+      "query": "folk acoustic guitar",
+      "total_candidates": 96,
+      "results_returned": 15,
+      "latency": {
+        "runs": 3,
+        "min_ms": 95.1,
+        "max_ms": 96.4,
+        "avg_ms": 95.6,
+        "median_ms": 95.3
+      },
+      "stages": {
+        "retrieval_ms": 40.5,
+        "ranking_ms": 0.6,
+        "rerank_ms": 42.3,
+        "diversity_ms": 8.4
+      },
+      "top_5": [
+        {
+          "position": 1,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.4539,
+          "popularity": 1.0,
+          "composite": 0.7209,
+          "final": 0.6182,
+          "mmr": 0.4328,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Bhrashtachar: The Price of Blood",
+          "genre": "metal",
+          "mood": "aggressive",
+          "bpm": 120,
+          "semantic": 0.2721,
+          "popularity": 0.5,
+          "composite": 0.471,
+          "final": 0.5028,
+          "mmr": 0.2419,
+          "redundancy": 0.3668
+        },
+        {
+          "position": 3,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.3558,
+          "popularity": 1.0,
+          "composite": 0.6765,
+          "final": 0.6005,
+          "mmr": 0.2383,
+          "redundancy": 0.607
+        },
+        {
+          "position": 4,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.2762,
+          "popularity": 1.0,
+          "composite": 0.6351,
+          "final": 0.5548,
+          "mmr": 0.214,
+          "redundancy": 0.5812
+        },
+        {
+          "position": 5,
+          "title": "Homebound Echoes",
+          "genre": "folk / acoustic",
+          "mood": "chill",
+          "bpm": 80,
+          "semantic": 0.5119,
+          "popularity": 0.5,
+          "composite": 0.6222,
+          "final": 0.5788,
+          "mmr": 0.1851,
+          "redundancy": 0.7337
+        }
+      ]
+    },
+    {
+      "label": "Synthwave (subgenre)",
+      "query": "electronic synthwave neon",
+      "total_candidates": 96,
+      "results_returned": 14,
+      "latency": {
+        "runs": 3,
+        "min_ms": 94.0,
+        "max_ms": 99.9,
+        "avg_ms": 96.6,
+        "median_ms": 95.8
+      },
+      "stages": {
+        "retrieval_ms": 42.0,
+        "ranking_ms": 0.6,
+        "rerank_ms": 39.9,
+        "diversity_ms": 6.8
+      },
+      "top_5": [
+        {
+          "position": 1,
+          "title": "Neon Drift",
+          "genre": "electronic",
+          "mood": "dark",
+          "bpm": 110,
+          "semantic": 0.6379,
+          "popularity": 0.5,
+          "composite": 0.6414,
+          "final": 0.5866,
+          "mmr": 0.4106,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.3622,
+          "popularity": 1.0,
+          "composite": 0.6786,
+          "final": 0.5715,
+          "mmr": 0.2328,
+          "redundancy": 0.5576
+        },
+        {
+          "position": 3,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.2673,
+          "popularity": 1.0,
+          "composite": 0.6324,
+          "final": 0.5529,
+          "mmr": 0.2128,
+          "redundancy": 0.581
+        },
+        {
+          "position": 4,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.2236,
+          "popularity": 1.0,
+          "composite": 0.6111,
+          "final": 0.5444,
+          "mmr": 0.199,
+          "redundancy": 0.607
+        },
+        {
+          "position": 5,
+          "title": "Midnight Pulse",
+          "genre": "electronic",
+          "mood": "energetic",
+          "bpm": 120,
+          "semantic": 0.4015,
+          "popularity": 0.5,
+          "composite": 0.5706,
+          "final": 0.5284,
+          "mmr": 0.1873,
+          "redundancy": 0.6089
+        }
+      ]
+    }
+  ],
+  "filter_benchmarks": [
+    {
+      "label": "Genre filter (pop)",
+      "query": "energetic dance",
+      "filters": {
+        "genre": "pop"
+      },
+      "results_returned": 20,
+      "latency": {
+        "runs": 3,
+        "min_ms": 68.5,
+        "max_ms": 81.6,
+        "avg_ms": 75.9,
+        "median_ms": 77.6
+      },
+      "top_3": [
+        {
+          "position": 1,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.319,
+          "popularity": 1.0,
+          "composite": 0.6591,
+          "final": 0.5718,
+          "mmr": 0.4002,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Kathma6's Anthem",
+          "genre": "pop",
+          "mood": "energetic",
+          "bpm": 120,
+          "semantic": 0.4983,
+          "popularity": 0.5,
+          "composite": 0.5692,
+          "final": 0.5576,
+          "mmr": 0.164,
+          "redundancy": 0.7544
+        },
+        {
+          "position": 3,
+          "title": "Life's Melody",
+          "genre": "pop",
+          "mood": "hopeful",
+          "bpm": 120,
+          "semantic": 0.4503,
+          "popularity": 0.5,
+          "composite": 0.5611,
+          "final": 0.5404,
+          "mmr": 0.1425,
+          "redundancy": 0.7861
+        }
+      ]
+    },
+    {
+      "label": "BPM filter (80-100)",
+      "query": "mellow vibes",
+      "filters": {
+        "bpm_min": 80,
+        "bpm_max": 100
+      },
+      "results_returned": 16,
+      "latency": {
+        "runs": 3,
+        "min_ms": 51.3,
+        "max_ms": 57.2,
+        "avg_ms": 54.4,
+        "median_ms": 54.7
+      },
+      "top_3": [
+        {
+          "position": 1,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.4707,
+          "popularity": 1.0,
+          "composite": 0.7202,
+          "final": 0.5881,
+          "mmr": 0.4116,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.3811,
+          "popularity": 1.0,
+          "composite": 0.6823,
+          "final": 0.5729,
+          "mmr": 0.219,
+          "redundancy": 0.607
+        },
+        {
+          "position": 3,
+          "title": "Breaking Out",
+          "genre": "hip-hop / rap",
+          "mood": "confident",
+          "bpm": 90,
+          "semantic": 0.3029,
+          "popularity": 0.5,
+          "composite": 0.5225,
+          "final": 0.509,
+          "mmr": 0.2101,
+          "redundancy": 0.4875
+        }
+      ]
+    },
+    {
+      "label": "Format filter (MUSIC)",
+      "query": "dark cinematic",
+      "filters": {
+        "format": "MUSIC"
+      },
+      "results_returned": 15,
+      "latency": {
+        "runs": 3,
+        "min_ms": 91.6,
+        "max_ms": 947.8,
+        "avg_ms": 377.9,
+        "median_ms": 94.3
+      },
+      "top_3": [
+        {
+          "position": 1,
+          "title": "Infinity's Shadow",
+          "genre": "soundtrack",
+          "mood": "dark",
+          "bpm": 120,
+          "semantic": 0.5713,
+          "popularity": 0.5,
+          "composite": 0.6385,
+          "final": 0.5854,
+          "mmr": 0.4098,
+          "redundancy": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "bpm": 100,
+          "semantic": 0.273,
+          "popularity": 1.0,
+          "composite": 0.6299,
+          "final": 0.552,
+          "mmr": 0.2521,
+          "redundancy": 0.4477
+        },
+        {
+          "position": 3,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "bpm": 90,
+          "semantic": 0.3465,
+          "popularity": 1.0,
+          "composite": 0.6706,
+          "final": 0.5683,
+          "mmr": 0.2157,
+          "redundancy": 0.607
+        }
+      ]
+    }
+  ],
+  "feedback_latency": {
+    "output_id": "b1317c61-b7b7-4ebb-84cc-9fa9bb3cf88b",
+    "latency": {
+      "runs": 10,
+      "min_ms": 6.9,
+      "max_ms": 41.4,
+      "avg_ms": 13.0,
+      "median_ms": 10.1
+    }
+  },
+  "concurrent_feedback": {
+    "concurrent_requests": 50,
+    "successful_responses": 50,
+    "clicks_before": 70,
+    "clicks_after": 120,
+    "actual_increase": 50,
+    "expected_increase": 50,
+    "data_loss": 0,
+    "wall_ms": 1661.4,
+    "avg_per_request_ms": 33.2,
+    "thread_safe": true
+  },
+  "ranking_improvement": {
+    "query": "Christmas",
+    "target_output_id": "d6bffcca-df90-4b87-ba83-0df36d5edf87",
+    "target_title": "Midnight Breeze",
+    "clicks_sent": 50,
+    "clicks_recorded": 50,
+    "before": {
+      "position": 6,
+      "semantic": 0.1526,
+      "popularity": 0.5,
+      "composite": 0.4436
+    },
+    "after": {
+      "position": 6,
+      "semantic": 0.1526,
+      "popularity": 1.0,
+      "composite": 0.5758
+    },
+    "positions_gained": 0,
+    "result": "FAIL"
+  }
+}

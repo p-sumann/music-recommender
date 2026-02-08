@@ -1,0 +1,528 @@
+{
+  "tests": [
+    {
+      "query": "Pop",
+      "total_candidates": 96,
+      "results_shown": 6,
+      "results": [
+        {
+          "position": 1,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "semantic_score": 0.3099,
+          "composite_score": 0.6499,
+          "mmr_score": 0.4128,
+          "redundancy_score": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "semantic_score": 0.1558,
+          "composite_score": 0.5734,
+          "mmr_score": 0.2309,
+          "redundancy_score": 0.4654
+        },
+        {
+          "position": 3,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "semantic_score": 0.1676,
+          "composite_score": 0.5809,
+          "mmr_score": 0.1906,
+          "redundancy_score": 0.607
+        },
+        {
+          "position": 4,
+          "title": "Weekend Vibes",
+          "genre": "pop",
+          "mood": "happy",
+          "semantic_score": 0.3217,
+          "composite_score": 0.5043,
+          "mmr_score": 0.1547,
+          "redundancy_score": 0.7227
+        },
+        {
+          "position": 5,
+          "title": "Breakout Beat",
+          "genre": "hip-hop / rap",
+          "mood": "hopeful",
+          "semantic_score": 0.2924,
+          "composite_score": 0.4667,
+          "mmr_score": 0.1455,
+          "redundancy_score": 0.7084
+        },
+        {
+          "position": 6,
+          "title": "Let It Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "semantic_score": 0.2836,
+          "composite_score": 0.4714,
+          "mmr_score": 0.1369,
+          "redundancy_score": 0.7524
+        }
+      ],
+      "genre_distribution": {
+        "pop": 3,
+        "world": 1,
+        "folk / acoustic": 1,
+        "hip-hop / rap": 1
+      },
+      "unique_genres": 4,
+      "mood_distribution": {
+        "hopeful": 3,
+        "peaceful": 1,
+        "romantic": 1,
+        "happy": 1
+      },
+      "unique_moods": 4,
+      "max_genre_pct": 50.0,
+      "genre_dominated": false,
+      "diversity_pass": true,
+      "description": "Generic genre query - should NOT return all-pop results"
+    },
+    {
+      "query": "Christmas holiday festive",
+      "total_candidates": 96,
+      "results_shown": 8,
+      "results": [
+        {
+          "position": 1,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "semantic_score": 0.4314,
+          "composite_score": 0.7058,
+          "mmr_score": 0.4077,
+          "redundancy_score": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Screams of the Mountain",
+          "genre": "metal",
+          "mood": "aggressive",
+          "semantic_score": 0.1725,
+          "composite_score": 0.445,
+          "mmr_score": 0.2059,
+          "redundancy_score": 0.4292
+        },
+        {
+          "position": 3,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "semantic_score": 0.202,
+          "composite_score": 0.5977,
+          "mmr_score": 0.1953,
+          "redundancy_score": 0.607
+        },
+        {
+          "position": 4,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "semantic_score": 0.1521,
+          "composite_score": 0.5727,
+          "mmr_score": 0.194,
+          "redundancy_score": 0.588
+        },
+        {
+          "position": 5,
+          "title": "Snowy Holiday Nights",
+          "genre": "pop",
+          "mood": "happy",
+          "semantic_score": 0.4411,
+          "composite_score": 0.5365,
+          "mmr_score": 0.1636,
+          "redundancy_score": 0.725
+        },
+        {
+          "position": 6,
+          "title": "Kathmandu Rhythms",
+          "genre": "folk / acoustic",
+          "mood": "energetic",
+          "semantic_score": 0.1985,
+          "composite_score": 0.4658,
+          "mmr_score": 0.1462,
+          "redundancy_score": 0.6476
+        },
+        {
+          "position": 7,
+          "title": "House of Dreams",
+          "genre": "electronic",
+          "mood": "energetic",
+          "semantic_score": 0.1611,
+          "composite_score": 0.4475,
+          "mmr_score": 0.1374,
+          "redundancy_score": 0.6596
+        },
+        {
+          "position": 8,
+          "title": "Midnight Breeze",
+          "genre": "electronic",
+          "mood": "chill",
+          "semantic_score": 0.1582,
+          "composite_score": 0.4447,
+          "mmr_score": 0.1234,
+          "redundancy_score": 0.7038
+        }
+      ],
+      "genre_distribution": {
+        "folk / acoustic": 2,
+        "metal": 1,
+        "world": 1,
+        "pop": 2,
+        "electronic": 2
+      },
+      "unique_genres": 5,
+      "mood_distribution": {
+        "romantic": 1,
+        "aggressive": 1,
+        "peaceful": 1,
+        "hopeful": 1,
+        "happy": 1,
+        "energetic": 2,
+        "chill": 1
+      },
+      "unique_moods": 7,
+      "max_genre_pct": 25.0,
+      "genre_dominated": false,
+      "diversity_pass": true,
+      "description": "Seasonal query - should NOT be dominated by one subgenre"
+    },
+    {
+      "query": "energetic dance beat",
+      "total_candidates": 96,
+      "results_shown": 8,
+      "results": [
+        {
+          "position": 1,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "semantic_score": 0.3739,
+          "composite_score": 0.6824,
+          "mmr_score": 0.4096,
+          "redundancy_score": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "semantic_score": 0.2459,
+          "composite_score": 0.6189,
+          "mmr_score": 0.2437,
+          "redundancy_score": 0.4654
+        },
+        {
+          "position": 3,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "semantic_score": 0.2082,
+          "composite_score": 0.5991,
+          "mmr_score": 0.1957,
+          "redundancy_score": 0.607
+        },
+        {
+          "position": 4,
+          "title": "Kathmandu Rhythms",
+          "genre": "folk / acoustic",
+          "mood": "energetic",
+          "semantic_score": 0.4248,
+          "composite_score": 0.5495,
+          "mmr_score": 0.1944,
+          "redundancy_score": 0.6191
+        },
+        {
+          "position": 5,
+          "title": "Fire in the Night",
+          "genre": "electronic",
+          "mood": "energetic",
+          "semantic_score": 0.5103,
+          "composite_score": 0.6019,
+          "mmr_score": 0.1915,
+          "redundancy_score": 0.6245
+        },
+        {
+          "position": 6,
+          "title": "Midnight Study",
+          "genre": "electronic",
+          "mood": "chill",
+          "semantic_score": 0.3049,
+          "composite_score": 0.509,
+          "mmr_score": 0.1608,
+          "redundancy_score": 0.639
+        },
+        {
+          "position": 7,
+          "title": "Breakout Beat",
+          "genre": "hip-hop / rap",
+          "mood": "hopeful",
+          "semantic_score": 0.4033,
+          "composite_score": 0.4873,
+          "mmr_score": 0.1577,
+          "redundancy_score": 0.6992
+        },
+        {
+          "position": 8,
+          "title": "Life's Melody",
+          "genre": "pop",
+          "mood": "hopeful",
+          "semantic_score": 0.4872,
+          "composite_score": 0.6007,
+          "mmr_score": 0.1503,
+          "redundancy_score": 0.7804
+        }
+      ],
+      "genre_distribution": {
+        "pop": 2,
+        "world": 1,
+        "folk / acoustic": 2,
+        "electronic": 2,
+        "hip-hop / rap": 1
+      },
+      "unique_genres": 5,
+      "mood_distribution": {
+        "hopeful": 3,
+        "peaceful": 1,
+        "romantic": 1,
+        "energetic": 2,
+        "chill": 1
+      },
+      "unique_moods": 5,
+      "max_genre_pct": 25.0,
+      "genre_dominated": false,
+      "diversity_pass": true,
+      "description": "Mood+tempo query - should surface multiple genres"
+    },
+    {
+      "query": "chill ambient relaxing",
+      "total_candidates": 96,
+      "results_shown": 10,
+      "results": [
+        {
+          "position": 1,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "semantic_score": 0.5375,
+          "composite_score": 0.7681,
+          "mmr_score": 0.4251,
+          "redundancy_score": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "semantic_score": 0.2703,
+          "composite_score": 0.6191,
+          "mmr_score": 0.2438,
+          "redundancy_score": 0.4654
+        },
+        {
+          "position": 3,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "semantic_score": 0.4094,
+          "composite_score": 0.6967,
+          "mmr_score": 0.223,
+          "redundancy_score": 0.607
+        },
+        {
+          "position": 4,
+          "title": "Infinity's Shadow",
+          "genre": "soundtrack",
+          "mood": "dark",
+          "semantic_score": 0.3148,
+          "composite_score": 0.5189,
+          "mmr_score": 0.1897,
+          "redundancy_score": 0.5518
+        },
+        {
+          "position": 5,
+          "title": "Midnight Study",
+          "genre": "electronic",
+          "mood": "chill",
+          "semantic_score": 0.4571,
+          "composite_score": 0.5478,
+          "mmr_score": 0.1897,
+          "redundancy_score": 0.639
+        },
+        {
+          "position": 6,
+          "title": "Whisker Waltz",
+          "genre": "children / family",
+          "mood": "happy",
+          "semantic_score": 0.4276,
+          "composite_score": 0.5833,
+          "mmr_score": 0.1878,
+          "redundancy_score": 0.6184
+        },
+        {
+          "position": 7,
+          "title": "Echoes of the Unknown",
+          "genre": "electronic",
+          "mood": "dark",
+          "semantic_score": 0.5043,
+          "composite_score": 0.6181,
+          "mmr_score": 0.1766,
+          "redundancy_score": 0.6882
+        },
+        {
+          "position": 8,
+          "title": "Tea Time Serenade",
+          "genre": "folk / acoustic",
+          "mood": "chill",
+          "semantic_score": 0.535,
+          "composite_score": 0.6183,
+          "mmr_score": 0.17,
+          "redundancy_score": 0.7302
+        },
+        {
+          "position": 9,
+          "title": "Midnight Pulse",
+          "genre": "hip-hop / rap",
+          "mood": "confident",
+          "semantic_score": 0.3236,
+          "composite_score": 0.517,
+          "mmr_score": 0.157,
+          "redundancy_score": 0.6591
+        },
+        {
+          "position": 10,
+          "title": "Let It Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "semantic_score": 0.3427,
+          "composite_score": 0.5372,
+          "mmr_score": 0.1388,
+          "redundancy_score": 0.7388
+        }
+      ],
+      "genre_distribution": {
+        "world": 1,
+        "pop": 2,
+        "folk / acoustic": 2,
+        "soundtrack": 1,
+        "electronic": 2,
+        "children / family": 1,
+        "hip-hop / rap": 1
+      },
+      "unique_genres": 7,
+      "mood_distribution": {
+        "peaceful": 1,
+        "hopeful": 2,
+        "romantic": 1,
+        "dark": 2,
+        "chill": 2,
+        "happy": 1,
+        "confident": 1
+      },
+      "unique_moods": 7,
+      "max_genre_pct": 20.0,
+      "genre_dominated": false,
+      "diversity_pass": true,
+      "description": "Mood query - should mix electronic, folk, world"
+    },
+    {
+      "query": "upbeat pop",
+      "total_candidates": 96,
+      "results_shown": 6,
+      "results": [
+        {
+          "position": 1,
+          "title": "Breaking Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "semantic_score": 0.5156,
+          "composite_score": 0.7536,
+          "mmr_score": 0.442,
+          "redundancy_score": 0.0
+        },
+        {
+          "position": 2,
+          "title": "Kathmandu Dawn",
+          "genre": "world",
+          "mood": "peaceful",
+          "semantic_score": 0.2948,
+          "composite_score": 0.6438,
+          "mmr_score": 0.2506,
+          "redundancy_score": 0.4654
+        },
+        {
+          "position": 3,
+          "title": "Family Hearth",
+          "genre": "folk / acoustic",
+          "mood": "romantic",
+          "semantic_score": 0.2746,
+          "composite_score": 0.6361,
+          "mmr_score": 0.206,
+          "redundancy_score": 0.607
+        },
+        {
+          "position": 4,
+          "title": "Kathma6's Anthem",
+          "genre": "pop",
+          "mood": "energetic",
+          "semantic_score": 0.5134,
+          "composite_score": 0.6181,
+          "mmr_score": 0.1719,
+          "redundancy_score": 0.7544
+        },
+        {
+          "position": 5,
+          "title": "Let It Out",
+          "genre": "pop",
+          "mood": "hopeful",
+          "semantic_score": 0.5188,
+          "composite_score": 0.5764,
+          "mmr_score": 0.166,
+          "redundancy_score": 0.7388
+        },
+        {
+          "position": 6,
+          "title": "Neon Drift",
+          "genre": "electronic",
+          "mood": "dark",
+          "semantic_score": 0.4809,
+          "composite_score": 0.6136,
+          "mmr_score": 0.1398,
+          "redundancy_score": 0.8088
+        }
+      ],
+      "genre_distribution": {
+        "pop": 3,
+        "world": 1,
+        "folk / acoustic": 1,
+        "electronic": 1
+      },
+      "unique_genres": 4,
+      "mood_distribution": {
+        "hopeful": 2,
+        "peaceful": 1,
+        "romantic": 1,
+        "energetic": 1,
+        "dark": 1
+      },
+      "unique_moods": 5,
+      "max_genre_pct": 50.0,
+      "genre_dominated": false,
+      "diversity_pass": true,
+      "description": "Specific genre - MMR should still inject diversity"
+    }
+  ],
+  "summary": {
+    "total_tests": 5,
+    "passed": 5,
+    "failed": 0,
+    "all_passed": true
+  }
+}
